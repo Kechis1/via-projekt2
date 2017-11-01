@@ -1,0 +1,31 @@
+body {
+  font-family: @font-roboto;
+  font-size: @font-size-base;
+  font-weight: @font-weight-normal;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  -ms-overflow-style: scrollbar;
+  background-color: @color-white;
+  color: @font-color;
+  height: 100%;
+
+  a {
+    color: @font-color;
+    @include transition(all .2s ease-out);
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+#header {
+  padding: 10px 0 20px 0;
+}
+
+#page-wrapper {
+  background-color: @color-white;
+  padding: 0;
+}

@@ -1,0 +1,89 @@
+.navbar {
+  height: @header-height;
+  border: 0;
+}
+
+.navbar-header {
+  h1 {
+    margin: 0;
+  }
+
+  .navbar-toggle {
+    background-color: @color-blue;
+
+    .icon-bar {
+      background-color: @color-white;
+    }
+  }
+}
+
+.navbar-brand {
+  height: auto;
+  float: none;
+  display: block;
+}
+
+.navbar-nav {
+  top: 50%;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.navbar-main {
+
+  &.navbar-collapse {
+    height: @header-height !important;
+  }
+
+  > .nav {
+    > li {
+      margin: 0 20px;
+      display: inline-block;
+      float: none;
+
+      &:hover .dropdown-menu {
+        visibility: visible;
+      }
+
+      > a {
+        text-transform: uppercase;
+        color: @color-black;
+        font-weight: @font-weight-bold;
+        font-size: @font-size-base;
+        padding: 15px 0 5px 0 !important;
+        background-color: transparent !important;
+
+        &.active {
+          border-bottom: 3px solid @color-blue;
+        }
+
+        &.active, &:hover, &:focus {
+          color: @color-blue;
+        }
+      }
+
+      .dropdown-menu {
+        display: block;
+        visibility: hidden;
+
+        a {
+          padding: 10px 15px;
+          color: @color-blue;
+
+          &:active, &:focus, &:hover {
+            color: @color-blue;
+            background-color: transparent;
+            background-image: none;
+          }
+
+          &:hover {
+            background-color: @color-blue-lightest;
+          }
+        }
+      }
+    }
+  }
+}

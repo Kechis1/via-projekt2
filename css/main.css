@@ -1,0 +1,103 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700";
+.navbar {
+  height: 110px;
+  border: 0;
+}
+.navbar-header h1 {
+  margin: 0;
+}
+.navbar-header .navbar-toggle {
+  background-color: #00b2ca;
+}
+.navbar-header .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-brand {
+  height: auto;
+  float: none;
+  display: block;
+}
+.navbar-nav {
+  top: 50%;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.navbar-main.navbar-collapse {
+  height: 110px !important;
+}
+.navbar-main > .nav > li {
+  margin: 0 20px;
+  display: inline-block;
+  float: none;
+}
+.navbar-main > .nav > li:hover .dropdown-menu {
+  visibility: visible;
+}
+.navbar-main > .nav > li > a {
+  text-transform: uppercase;
+  color: #333333;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 15px 0 5px 0 !important;
+  background-color: transparent !important;
+}
+.navbar-main > .nav > li > a.active {
+  border-bottom: 3px solid #00b2ca;
+}
+.navbar-main > .nav > li > a.active,
+.navbar-main > .nav > li > a:hover,
+.navbar-main > .nav > li > a:focus {
+  color: #00b2ca;
+}
+.navbar-main > .nav > li .dropdown-menu {
+  display: block;
+  visibility: hidden;
+}
+.navbar-main > .nav > li .dropdown-menu a {
+  padding: 10px 15px;
+  color: #00b2ca;
+}
+.navbar-main > .nav > li .dropdown-menu a:active,
+.navbar-main > .nav > li .dropdown-menu a:focus,
+.navbar-main > .nav > li .dropdown-menu a:hover {
+  color: #00b2ca;
+  background-color: transparent;
+  background-image: none;
+}
+.navbar-main > .nav > li .dropdown-menu a:hover {
+  background-color: #e2f4f8;
+}
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  -ms-overflow-style: scrollbar;
+  background-color: #ffffff;
+  color: #333333;
+  height: 100%;
+}
+body a {
+  color: #333333;
+  @include transition(all .2s ease-out);
+}
+body a:hover,
+body a:focus {
+  text-decoration: none;
+}
+#header {
+  padding: 10px 0 20px 0;
+}
+#page-wrapper {
+  background-color: #ffffff;
+  padding: 0;
+}
+.slider-wrapper {
+  height: 400px;
+  background-color: #fec901;
+}
