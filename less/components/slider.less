@@ -1,0 +1,64 @@
+.slider-wrapper {
+  position: relative;
+  text-align: center;
+
+  h2 {
+    font-size: @font-size-xxxl;
+  }
+
+  p {
+    font-family: @font-roboto;
+    font-weight: @font-weight-normal;
+    font-size: @font-size-base;
+    font-style: @font-style-italic;
+    color: @color-blue;
+  }
+
+  .slider-background {
+    position: relative;
+    left: 50%;
+    margin-left: -948px;
+    margin-top: -300px;
+    width: 1903px;
+    z-index: 1;
+  }
+
+  .slider {
+    min-height: 400px;
+    z-index: 2;
+    position: relative;
+
+    .slide {
+
+      img {
+        margin: 0 auto;
+        display: block;
+      }
+
+      ul li {
+        color: @color-black-lighten;
+        font-weight: @font-weight-bold;
+      }
+
+      .btn-pill {
+        padding: 4px 16px;
+        border: 3px solid @font-color;
+        color: @font-color;
+        font-weight: @font-weight-bold;
+
+        &:hover {
+          background-color: @color-black-lightest !important;
+        }
+      }
+
+      .btn-lg {
+        font-size: @font-size-base !important;
+        padding: 17px 40px;
+        font-family: @font-roboto-slab;
+        border: 0;
+      }
+    }
+  }
+
+
+}

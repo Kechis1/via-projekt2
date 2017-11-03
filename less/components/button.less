@@ -1,0 +1,33 @@
+.btn-pill {
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+}
+
+.btn-transparent {
+  background-color: transparent !important;
+}
+
+.btn-default {
+  background-color: @color-black-lighter;
+  border: 0;
+  color: @color-white;
+
+  &:hover, &:focus, &:active, &:active:hover, &:active:focus {
+    background-color: @color-black-lighten;
+    color: @color-white;
+    text-shadow: none;
+  }
+}
+
+.btn-info {
+  background-color: @color-blue;
+
+  &:hover, &:focus, &:active, &:active:hover, &:active:focus {
+    background-color: @color-blue-lighten;
+  }
+}
+
+.btn-order {
+  font-weight: @font-weight-bold;
+}

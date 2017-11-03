@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>
@@ -38,7 +39,7 @@
                                     <a href="#">E-shop</a>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" role="button">Služby <span class="caret"></span></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Služby <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="#">Vložkování</a></li>
                                         <li><a href="#">Frézování</a></li>
@@ -59,9 +60,44 @@
         </header>
 
         <section class="slider-wrapper">
-            <div>
+
+            <div class="slider container">
+
+                <div class="slide">
+                    <h2>The raw power of Dedicated Servers</h2>
+                    <p>Get the compute and I/O power of single tenant dedicated servers.</p>
+                    <img src="img/aledo-01-keramika-krbova-kamna.png" alt="aledo-01-keramika-krbova-kamna">
+
+                    <div class="row mt-20">
+                        <ul class="nav nav-inline nav-check">
+                            <li>4 x 3.3 GHz CPU</li>
+                            <li>1TB (Mirrored) Storage</li>
+                            <li>16GB Available RAM</li>
+                            <li>15TB Bandwidth</li>
+                        </ul>
+                    </div>
+
+                    <div class="row mt-20">
+                        <button type="button" class="btn btn-default btn-lg m-10">60.95 $</button>
+                        <button type="button" class="btn btn-order btn-info btn-lg m-10">Order</button>
+                    </div>
+
+                    <div class="row mt-20">
+                        <button type="button" class="btn btn-transparent btn-pill mlmr-10">prev</button>
+                        <button type="button" class="btn btn-transparent btn-pill mlmr-10">next</button>
+                    </div>
+                </div>
 
             </div>
+
+            <div class="slider-background">
+                <img src="img/background-slider.jpg" alt="">
+            </div>
+        </section>
+
+        <section>
+            <h2>01_Legend Plans</h2>
+            <p>Each plan comes with <span class="font-bold">a risk-free 7 days trial.</span> Choose yours below</p>
         </section>
     </div>
 </body>
