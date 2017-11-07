@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden;
-  font-family: @font-roboto;
+  font-family: @font-open-sans;
   font-size: @font-size-base;
   font-weight: @font-weight-normal;
   text-rendering: optimizeLegibility !important;
@@ -10,21 +10,30 @@ body {
   background-color: @color-white;
   color: @font-color;
   height: 100%;
+}
 
-  a {
-    color: @font-color;
-    @include transition(all .2s ease-out);
+p {
+  color: @color-black-light;
+}
 
-    &:hover,
-    &:focus {
-      text-decoration: none;
-    }
+a {
+  color: @font-color;
+  @include transition(all .2s ease-out);
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
   }
 }
 
 section {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   display: block;
+  text-align: center;
+}
+
+.section-wrapper {
+  margin-top: 40px;
 }
 
 h2 {
@@ -57,6 +66,10 @@ h2 {
 }
 .ml-0 {
   margin-left: 0!important;
+}
+
+.mr-2 {
+  margin-right: 2px!important;
 }
 
 .m-5 {
@@ -158,7 +171,17 @@ h2 {
 .mlmr-10 {
   margin: 0 10px!important;
 }
+.mlmr-2 {
+  margin: 0 2px!important;
+}
 
 .font-bold {
   font-weight: @font-weight-bold !important;
+}
+
+.fa-xl {
+  font-size: @font-size-xl!important;
+}
+.fa-xxl {
+  font-size: @font-size-xxl!important;
 }
