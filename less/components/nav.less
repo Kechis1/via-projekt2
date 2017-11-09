@@ -32,3 +32,29 @@
     padding: 12px 0;
   }
 }
+
+.nav-pills {
+  > li {
+    &.active > a {
+      color: @color-white;
+      background-color: @color-blue;
+      border-color: @color-blue;
+
+      &:hover, &:focus {
+        background-color: @color-blue-lighten;
+      }
+    }
+  }
+}
+
+.nav-stacked-default {
+  li a {
+    background-color: transparent;
+    border: 1px solid @color-black-lighter;
+    color: @color-black;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 20px 0;
+    border-radius: 8px;
+  }
+}
