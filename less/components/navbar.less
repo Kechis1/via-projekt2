@@ -39,7 +39,7 @@
   transform: translateY(-50%);
   z-index: 4;
 
-  @media (max-width: 767px) {
+  @media (max-width: @screen-sm-max) {
     top: 0;
     position: static;
     -webkit-transform: translateY(0%);
@@ -54,7 +54,7 @@
 
   &.navbar-collapse {
 
-    @media (max-width: 767px) {
+    @media (max-width: @screen-sm-max) {
       background-color: @color-blue;
       overflow-y: hidden;
       padding: 0;
@@ -70,7 +70,7 @@
       display: inline-block;
       float: none;
 
-      @media (max-width: 767px) {
+      @media (max-width: @screen-sm-max) {
         display: block;
         margin: 0;
         padding: 0;
@@ -103,7 +103,7 @@
         padding: 15px 0 5px 0 !important;
         background-color: transparent !important;
 
-        @media (max-width: 767px) {
+        @media (max-width: @screen-sm-max) {
           color: @color-white;
           padding: 20px 30px !important;
           border: 0;
@@ -113,7 +113,7 @@
         &.active {
           border-bottom: 3px solid @color-blue;
 
-          @media (max-width: 767px) {
+          @media (max-width: @screen-sm-max) {
             border-bottom: 0;
           }
         }
@@ -121,12 +121,12 @@
         &.active, &:hover, &:focus {
           color: @color-blue;
 
-          @media (max-width: 767px) {
+          @media (max-width: @screen-sm-max) {
             color: @color-white;
           }
         }
 
-        @media (max-width: 767px) {
+        @media (max-width: @screen-sm-max) {
           &:hover {
             color: @color-white;
             background-color: @color-blue-darken !important;
@@ -138,7 +138,7 @@
         display: block;
         visibility: hidden;
 
-        @media (max-width: 767px) {
+        @media (max-width: @screen-sm-max) {
           display: none;
           visibility: visible;
         }
@@ -147,7 +147,7 @@
           padding: 10px 15px;
           color: @color-blue;
 
-          @media (max-width: 767px) {
+          @media (max-width: @screen-sm-max) {
             color: @color-white !important;
             padding: 20px 50px;
           }
@@ -161,7 +161,7 @@
           &:hover {
             background-color: @color-blue-lightest;
 
-            @media (max-width: 767px) {
+            @media (max-width: @screen-sm-max) {
               background-color: @color-blue-darken;
             }
           }

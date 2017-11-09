@@ -158,26 +158,60 @@
 }
 .plan-box {
   background-color: #f3f5f7;
-  padding: 40px 20px;
+  padding: 20px;
+  position: relative;
+}
+.plan-box:before {
+  content: '\f10d';
+  color: #999999;
+  font-family: "FontAwesome";
+  font-size: 22px;
+  font-style: italic;
+  position: absolute;
+  top: -14px;
+  left: 0;
+  right: 0;
 }
 .plan-box .plan-box-heading {
-  color: #999999;
+  color: #333333;
+  padding: 23px 0;
 }
 .plan-box .plan-box-heading h4 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  margin-top: 15px;
+  margin-top: 31px;
+}
+.plan-box .plan-box-heading a {
+  color: #00b2ca;
+  font-style: italic;
+}
+.plan-box .plan-box-body {
+  padding: 7px 0 17px 0;
+  line-height: 2;
+}
+.plan-box .plan-box-body p {
+  font-size: 13px;
+  margin: 0;
+  color: #787878;
+}
+.plan-box .plan-box-footer {
+  padding: 20px 0 15px 0;
+}
+.plan-box .avatar {
+  border-radius: 50%;
+  border: 2px solid #e7e7e7;
 }
 .box {
   background-color: transparent;
+  margin: 10px 0;
 }
 .box .box-heading {
   color: #cccccc;
   padding-bottom: 20px;
 }
 .box .box-body {
-  border: 2px solid #cccccc;
-  padding: 20px;
+  border: 1px solid #cccccc;
+  padding: 16px 12px;
 }
 .box .box-body h4 {
   font-family: 'Roboto Slab', serif;
@@ -187,6 +221,20 @@
 }
 .box .box-body p {
   color: #999999;
+}
+@media (max-width: 1199px) {
+  .box .box-body img {
+    width: 122px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .box .box-body img {
+    width: 88px;
+  }
+}
+.box-wrapper .col-md-2 {
+  padding-left: 6px;
+  padding-right: 6px;
 }
 .slider-wrapper {
   position: relative;
@@ -244,6 +292,12 @@
   margin: 0 10px;
   display: inline-block;
 }
+.nav-inline li:first-child {
+  margin-left: 0;
+}
+.nav-inline li:last-child {
+  margin-right: 0;
+}
 .nav-vertical li {
   padding: 12px 0;
 }
@@ -251,13 +305,14 @@
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
   border-radius: 500px;
-  padding: 4px 16px;
-  border: 3px solid #28223c;
-  color: #28223c;
+  padding: 4px 12px;
+  font-size: 13px;
+  border: 2px solid #333333;
+  color: #333333;
   font-weight: 700;
 }
 .btn-pill:hover {
-  background-color: #f2f2f2 !important;
+  background-color: #cccccc !important;
 }
 .btn-transparent {
   background-color: transparent !important;
@@ -292,6 +347,7 @@
 footer {
   background-color: #2e3234;
   padding: 40px 0;
+  margin-top: 80px;
 }
 footer h4 {
   color: #ffffff;
@@ -301,15 +357,22 @@ footer h4 {
   margin-bottom: 20px;
 }
 footer li,
-footer a {
+footer a,
+footer p {
   font-weight: 600;
   color: #b8b8b8;
   font-size: 13px;
 }
-footer a {
+footer p {
+  margin: 0;
+}
+footer a,
+footer p {
   padding: 8px 0 !important;
 }
-footer a:hover {
+footer a:hover,
+footer a:active,
+footer a:focus {
   background-color: transparent !important;
   color: #ffffff;
 }
@@ -333,10 +396,48 @@ footer .nav-social-media .fa {
 footer .nav-inline:last-of-type {
   margin: 0;
 }
+.panel-group {
+  text-align: left;
+}
+.panel {
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.panel-default > .panel-heading {
+  color: #787878;
+  position: relative;
+  background: #f3f5f7 none no-repeat;
+}
+.panel-title {
+  font-size: 13px;
+  font-weight: 600;
+  margin-right: 20px;
+  line-height: 1.45;
+}
+.panel-heading:before {
+  content: '\f055';
+  color: #999999;
+  font-family: "FontAwesome";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.panel-group .panel-heading + .panel-collapse > .panel-body,
+.panel-group .panel-heading + .panel-collapse > .list-group {
+  border: 1px solid #ddd;
+}
+.panel-body {
+  color: #787878;
+  font-size: 12px;
+  line-height: 2;
+}
 body {
   overflow-x: hidden;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
+  line-height: 1.45;
   font-weight: 400;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
@@ -500,4 +601,9 @@ h2 {
 }
 .fa-xxl {
   font-size: 28px !important;
+}
+@media (min-width: 768px) {
+  .visible-sm-text-right {
+    text-align: right;
+  }
 }

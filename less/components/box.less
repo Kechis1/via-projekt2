@@ -1,5 +1,6 @@
 .box {
   background-color: transparent;
+  margin: 10px 0;
 
   .box-heading {
     color: @color-black-lighter;
@@ -7,8 +8,8 @@
   }
 
   .box-body {
-    border: 2px solid @color-black-lighter;
-    padding: 20px;
+    border: 1px solid @color-black-lighter;
+    padding: 16px 12px;
 
     h4 {
       font-family: @font-roboto-slab;
@@ -20,5 +21,22 @@
     p {
       color: @color-black-light;
     }
+
+    @media (max-width: @screen-lg-max) {
+      img {
+        width: 122px;
+      }
+    }
+
+    @media (min-width: @screen-sm-min) and (max-width: @screen-md-max) {
+      img {
+        width: 88px;
+      }
+    }
   }
+}
+
+.box-wrapper .col-md-2 {
+  padding-left: 6px;
+  padding-right: 6px;
 }

@@ -2,6 +2,7 @@ body {
   overflow-x: hidden;
   font-family: @font-open-sans;
   font-size: @font-size-base;
+  line-height: 1.45;
   font-weight: @font-weight-normal;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
@@ -39,7 +40,7 @@ section {
 h2 {
   font-family: @font-roboto-slab;
   font-weight: @font-weight-bold;
-  font-size: @font-size-xxl;
+  font-size: @font-size-xxxl;
   color: @font-color;
 }
 
@@ -183,5 +184,12 @@ h2 {
   font-size: @font-size-xl!important;
 }
 .fa-xxl {
-  font-size: @font-size-xxl!important;
+  font-size: @font-size-xxxl!important;
 }
+
+@media (min-width: @screen-sm-min) {
+  .visible-sm-text-right {
+    text-align: right;
+  }
+}
+
