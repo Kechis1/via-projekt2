@@ -1,0 +1,40 @@
+.breadcrumb-wrapper {
+  background-color: @color-box-background;
+  text-align: left;
+
+  .breadcrumb {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+
+    >li+li:before {
+      content: "/\00a0";
+      padding: 0 8px;
+      color: @color-black-light;
+      position: absolute;
+      left: -12px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .fa.fa-home {
+      font-size: @font-size-lg;
+      padding-right: 7px;
+    }
+
+    li {
+      position: relative;
+    }
+
+    li.active, a {
+      font-size: @font-size-md;
+      color: @color-black-light;
+      padding: 21px 4px;
+    }
+
+    a {
+      font-weight: @font-weight-bold;
+      display: block;
+    }
+  }
+}

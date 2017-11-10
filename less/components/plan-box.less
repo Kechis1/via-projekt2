@@ -1,4 +1,4 @@
-#reference .plan-box &:before {
+#reference .plan-box:before {
   content: '\f10d';
   color: @color-black-light;
   font-family: @font-icons;
@@ -13,16 +13,31 @@
 .plan-box {
   background-color: @color-box-background;
   padding: 20px;
+  margin: 20px 0;
   position: relative;
 
   .plan-box-heading {
     color: @color-black;
     padding: 23px 0;
 
+    .fa {
+      color: @color-black-light;
+      border-bottom: 3px solid @color-black-light;
+      padding-bottom: 15px;
+    }
+
     h4 {
       font-family: @font-open-sans;
       font-weight: @font-weight-bold;
       margin-top: 31px;
+    }
+
+    h3 {
+      color: @color-black-light;
+      font-size: @font-size-xl;
+      font-family: @font-open-sans;
+      font-weight: @font-weight-bold;
+      margin-top: 15px;
     }
 
     a {
@@ -39,6 +54,32 @@
       font-size: @font-size-md;
       margin: 0;
       color: @color-black-lighten;
+    }
+
+    .price-tag {
+      color: @color-blue;
+      font-size: @font-size-xxxl;
+      font-weight: @font-weight-bold;
+    }
+
+    .break-word {
+      color: @color-black-lighter;
+      display: inline-block;
+      text-align: left;
+      padding: 8px;
+      font-size: @font-size-md;
+      font-weight: @font-weight-semi-bold;
+
+      div {
+        line-height: 1.45;
+      }
+    }
+
+    li {
+      font-weight: @font-weight-bold;
+      font-size: @font-size-md;
+      color: @color-black-light;
+      padding: 4px 0;
     }
   }
 

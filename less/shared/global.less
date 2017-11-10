@@ -28,13 +28,27 @@ a {
 }
 
 section {
-  margin-bottom: 60px;
-  display: block;
   text-align: center;
 }
 
+.display-inline {
+  display: inline-block;
+}
+
+.rounded {
+  -webkit-border-radius: 50%!important;
+  -moz-border-radius: 50%!important;
+  border-radius: 50%!important;
+}
+
 .section-wrapper {
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  display: block;
+}
+
+.blue-gradient {
+  background: linear-gradient(90deg,@color-blue-darken 0, @color-blue-lighten);
 }
 
 h2 {
@@ -185,6 +199,10 @@ h2 {
 }
 .fa-xxl {
   font-size: @font-size-xxxl!important;
+}
+
+.text-left {
+  text-align: left;
 }
 
 @media (min-width: @screen-sm-min) {
