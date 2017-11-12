@@ -51,6 +51,17 @@ section {
   background: linear-gradient(90deg,@color-blue-darken 0, @color-blue-lighten);
 }
 
+.dark-gradient {
+  a, .fa {
+    color: @color-white;
+  }
+
+  a:hover, a:active, a:focus {
+    outline: 0!important;
+    background-color: transparent!important;
+  }
+}
+
 h2 {
   font-family: @font-roboto-slab;
   font-weight: @font-weight-bold;
@@ -186,6 +197,9 @@ h2 {
 .mlmr-10 {
   margin: 0 10px!important;
 }
+.mlmr-5 {
+  margin: 0 5px!important;
+}
 .mlmr-2 {
   margin: 0 2px!important;
 }
@@ -202,12 +216,24 @@ h2 {
 }
 
 .text-left {
-  text-align: left;
+  text-align: left!important;
+}
+.text-center {
+  text-align: center!important;
 }
 
 @media (min-width: @screen-sm-min) {
   .visible-sm-text-right {
-    text-align: right;
+    text-align: right!important;
   }
+}
+
+.fa-border {
+  padding: 0 !important;
+  width: 30px !important;;
+  height: 30px !important;;
+  line-height: 30px !important;;
+  border-color: @color-black-light !important;
+  text-align: center;
 }
 

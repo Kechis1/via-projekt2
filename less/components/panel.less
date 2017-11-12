@@ -7,21 +7,51 @@
   background-color: @color-black-lightest;
   padding: 20px;
   color: @color-black-light;
+  min-height: 150px;
+  position: relative;
+
+  .container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  ul {
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: @font-size-xxxl;
+    float: right;
+    font-family: @font-roboto-slab;
+    text-align: left;
+  }
 
   .fa {
+    text-align: center;
     color: @color-black-light;
   }
 
-  .fa-border {
-    padding: 0;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    border-color: @color-black-light;
+  a > span.fa {
+    margin-right: 10px;
   }
 
   .nav.nav-icons > li {
     margin: 5px 3px;
+  }
+
+  @media (max-width: @screen-sm-max) {
+    h3 {
+      float: none;
+    }
+
+    h3, ul {
+      text-align: center;
+    }
   }
 }
 
