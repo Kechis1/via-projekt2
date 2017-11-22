@@ -32,6 +32,28 @@
   float: none!important;
 }
 
+.has-error {
+  .form-control {
+    border-color: @color-error;
+
+    &:hover, &:focus, &:active {
+      border-color: @color-error;
+    }
+  }
+
+  .help-block {
+    text-align: left;
+
+    p {
+      margin: 10px 0;
+      color: @color-error;
+      font-size: @font-size-sm;
+    }
+  }
+}
+
+
+
 .form-footer {
   margin: 30px 0;
 }

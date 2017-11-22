@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/lightbox.js"></script>
 </head>
 <body>
     <div id="page-wrapper">
@@ -63,28 +64,50 @@
 
             <div class="slider container">
 
-                <div class="slide">
-                    <h2>The raw power of Dedicated Servers</h2>
-                    <p>Get the compute and I/O power of single tenant dedicated servers.</p>
-                    <img src="img/aledo-01-keramika-krbova-kamna.png" alt="aledo-01-keramika-krbova-kamna">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <h2>The raw power of Dedicated Servers 1</h2>
+                            <p>Get the compute and I/O power of single tenant dedicated servers.</p>
+                            <img src="img/aledo-01-keramika-krbova-kamna.png" alt="aledo-01-keramika-krbova-kamna">
+                            <div class="row mt-20">
+                                <ul class="nav nav-inline nav-check">
+                                    <li>4 x 3.3 GHz CPU</li>
+                                    <li>1TB (Mirrored) Storage</li>
+                                    <li>16GB Available RAM</li>
+                                    <li>15TB Bandwidth</li>
+                                </ul>
+                            </div>
 
-                    <div class="row mt-20">
-                        <ul class="nav nav-inline nav-check">
-                            <li>4 x 3.3 GHz CPU</li>
-                            <li>1TB (Mirrored) Storage</li>
-                            <li>16GB Available RAM</li>
-                            <li>15TB Bandwidth</li>
-                        </ul>
+                            <div class="row mt-20">
+                                <button type="button" class="btn btn-default btn-lg m-10">60.95 $</button>
+                                <button type="button" class="btn btn-order btn-info btn-lg m-10">Order</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h2>The raw power of Dedicated Servers 2</h2>
+                            <p>Get the compute and I/O power of single tenant dedicated servers.</p>
+                            <img src="img/aledo-01-keramika-krbova-kamna.png" alt="aledo-01-keramika-krbova-kamna">
+                            <div class="row mt-20">
+                                <ul class="nav nav-inline nav-check">
+                                    <li>4 x 3.3 GHz CPU</li>
+                                    <li>1TB (Mirrored) Storage</li>
+                                    <li>16GB Available RAM</li>
+                                    <li>15TB Bandwidth</li>
+                                </ul>
+                            </div>
+
+                            <div class="row mt-20">
+                                <button type="button" class="btn btn-default btn-lg m-10">60.95 $</button>
+                                <button type="button" class="btn btn-order btn-info btn-lg m-10">Order</button>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="row mt-20">
-                        <button type="button" class="btn btn-default btn-lg m-10">60.95 $</button>
-                        <button type="button" class="btn btn-order btn-info btn-lg m-10">Order</button>
-                    </div>
-
-                    <div class="row mt-20">
-                        <button type="button" class="btn btn-transparent btn-pill mlmr-10">prev</button>
-                        <button type="button" class="btn btn-transparent btn-pill mlmr-10">next</button>
+                        <a role="button" href="#myCarousel" class="btn btn-transparent btn-pill mlmr-10" data-slide="prev">prev</a>
+                        <a role="button" href="#myCarousel" class="btn btn-transparent btn-pill mlmr-10" data-slide="next">next</a>
                     </div>
                 </div>
 
@@ -304,18 +327,34 @@
                     </div>
                 </div>
                 <div class="col-sm-8">
-                    <div class="plan-box">
-                        <div class="plan-box-heading">
-                            <img class="avatar" src="img/random-avatar.jpg" alt="">
-                            <h4>Sara Dea</h4>
-                            <a href="#" class="">CEO@WHMCSdes.com</a>
-                        </div>
-                        <div class="plan-box-body">
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in osme form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                        </div>
-                        <div class="plan-box-footer">
-                            <button type="button" class="btn btn-transparent btn-pill mlmr-10">prev</button>
-                            <button type="button" class="btn btn-transparent btn-pill mlmr-10">next</button>
+                    <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+                        <div class="plan-box">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="plan-box-heading">
+                                        <img class="avatar" src="img/random-avatar.jpg" alt="">
+                                        <h4>Sara Dea</h4>
+                                        <a href="#" class="">CEO@WHMCSdes.com</a>
+                                    </div>
+                                    <div class="plan-box-body">
+                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in osme form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="plan-box-heading">
+                                        <img class="avatar" src="img/random-avatar.jpg" alt="">
+                                        <h4>Joe Doe</h4>
+                                        <a href="#" class="">CEO@WHMCSdes.com</a>
+                                    </div>
+                                    <div class="plan-box-body">
+                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in osme form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plan-box-footer">
+                                <a role="button" href="#myCarousel2" class="btn btn-transparent btn-pill mlmr-10" data-slide="prev">prev</a>
+                                <a role="button" href="#myCarousel2" class="btn btn-transparent btn-pill mlmr-10" data-slide="next">next</a>
+                            </div>
                         </div>
                     </div>
                 </div>

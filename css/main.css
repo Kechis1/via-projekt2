@@ -518,6 +518,22 @@
   padding: 20px;
   float: none!important;
 }
+.has-error .form-control {
+  border-color: #ff3428;
+}
+.has-error .form-control:hover,
+.has-error .form-control:focus,
+.has-error .form-control:active {
+  border-color: #ff3428;
+}
+.has-error .help-block {
+  text-align: left;
+}
+.has-error .help-block p {
+  margin: 10px 0;
+  color: #ff3428;
+  font-size: 12px;
+}
 .form-footer {
   margin: 30px 0;
 }

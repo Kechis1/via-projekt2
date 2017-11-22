@@ -1,0 +1,8 @@
+{
+  "error": {
+    "THIS_FIELD_IS_REQUIRED": "This field is required",
+    "THIS_FIELD_IS_TOO_SHORT": "This field is too short",
+    "THIS_FIELD_IS_TOO_LONG": "This field is too long",
+    "THIS_NEEDS_TO_BE_A_VALID_EMAIL": "This needs to be a valid email"
+  }
+}

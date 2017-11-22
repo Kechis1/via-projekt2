@@ -72,25 +72,30 @@
                 <h2>Get in Touch with us</h2>
                 <p>Glad to see you anytime ;)</p>
 
-                <form class="form-margin form-border col-md-10">
+                <form data-input-validation="on" class="form-margin form-border col-md-10">
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control underline-input" placeholder="Username">
+                            <input type="text" class="form-control underline-input" placeholder="Username" name="username" minlength="2" maxlength="100" required>
+                            <div class="help-block"></div>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control underline-input" placeholder="Email">
+                            <input type="email" class="form-control underline-input" placeholder="Email" name="email" minlength="5" maxlength="100" required>
+                            <div class="help-block"></div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control underline-input" placeholder="Phone">
+                            <input type="text" class="form-control underline-input" placeholder="Phone" name="phone" maxlength="100" required>
+                            <div class="help-block"></div>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control underline-input" placeholder="Subject">
+                            <input type="text" class="form-control underline-input" placeholder="Subject" name="subject" maxlength="100" required>
+                            <div class="help-block"></div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control underline-textarea" rows="2" placeholder="Message"></textarea>
+                        <textarea class="form-control underline-textarea" rows="2" placeholder="Message" name="message" required></textarea>
+                        <div class="help-block"></div>
                     </div>
                     <div class="form-footer">
                         <button type="submit" class="btn btn-underline">Send</button>
@@ -382,6 +387,7 @@
         </script>
 
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQzR-Gh21G996bAqtM1tc_XFNBvVmwN50&callback=myMap"></script>
+        <script src="js/input-validation.js"></script>
 
     </body>
 </html>

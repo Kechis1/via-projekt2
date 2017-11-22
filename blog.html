@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/vertical-load.js"></script>
 </head>
 <body>
 <div id="page-wrapper">
@@ -75,7 +76,7 @@
 
     <section class="section-wrapper container">
         <div class="row">
-            <div class="col-sm-9">
+            <div class="col-sm-9" data-slide="vertical">
                 <div class="blog">
                     <div class="blog-body">
                         <div class="img-container">
@@ -133,11 +134,10 @@
                             </span>
                         </div>
                     </div>
-
-                    <div class="blog-footer">
-                        <button type="button" class="btn btn-pill btn-transparent">Previous</button>
-                        <button type="button" class="btn btn-pill btn-transparent">Next</button>
-                    </div>
+                </div>
+                <div class="blog-footer">
+                    <button type="button" class="btn btn-pill btn-transparent" data-slide="prev">Previous</button>
+                    <button type="button" class="btn btn-pill btn-transparent" data-slide="next">Next</button>
                 </div>
             </div>
             <div class="col-sm-3">
@@ -215,12 +215,12 @@
                         <div class="widget-body widget-icons">
                             <h3 class="widget-title">Follow us</h3>
                             <ul class="nav nav-inline">
-                                <li><a class="fa fa-facebook fa-border rounded"></a></li>
-                                <li><a class="fa fa-twitter fa-border rounded"></a></li>
-                                <li><a class="fa fa-instagram fa-border rounded"></a></li>
-                                <li><a class="fa fa-linkedin fa-border rounded"></a></li>
-                                <li><a class="fa fa-google-plus fa-border rounded"></a></li>
-                                <li><a class="fa fa-pinterest fa-border rounded"></a></li>
+                                <li><a href="#" class="fa fa-facebook fa-border rounded"></a></li>
+                                <li><a href="#" class="fa fa-twitter fa-border rounded"></a></li>
+                                <li><a href="#" class="fa fa-instagram fa-border rounded"></a></li>
+                                <li><a href="#" class="fa fa-linkedin fa-border rounded"></a></li>
+                                <li><a href="#" class="fa fa-google-plus fa-border rounded"></a></li>
+                                <li><a href="#" class="fa fa-pinterest fa-border rounded"></a></li>
                             </ul>
                         </div>
                     </div>
