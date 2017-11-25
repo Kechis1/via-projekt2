@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/vertical-load.js"></script>
+    <script src="js/input-validation.js"></script>
 </head>
 <body>
 <div id="page-wrapper">
@@ -64,14 +64,10 @@
         <div class="container">
             <ol class="breadcrumb">
                 <li><a href="index.html"><span class="fa fa-home"></span>Home</a></li>
-                <li class="active">Blog</li>
+                <li><a href="blog.html">Blog</a></li>
+                <li class="active">Blog detail</li>
             </ol>
         </div>
-    </section>
-
-    <section class="section-wrapper container">
-        <h2>Blog</h2>
-        <p>Find all the resources you need to go from development to production.</p>
     </section>
 
     <section class="section-wrapper container">
@@ -83,7 +79,7 @@
                             <img src="img/blog1.jpg" alt="">
                         </div>
                         <div class="blog-title">
-                            <a href="blog-detail.html">Due to many cases of gas poisoning there will be fire detectors in Ostrava-Jih</a>
+                            <h2>Kvůli množství otrav plynem budou v bytech v Ostravě-Jihu hlásiče</h2>
                         </div>
                         <div class="blog-details">
                             <span class="blog-date">March 14, 2017</span>
@@ -96,49 +92,67 @@
                                 <span class="label label-rounded label-transparent">Detectors</span>
                             </span>
                         </div>
-                    </div>
-
-                    <div class="blog-body">
-                        <div class="img-container">
-                            <img src="img/blog1.jpg" alt="">
-                        </div>
-                        <div class="blog-title">
-                            <a href="blog-detail.html">How to Start A Successful Online Business</a>
-                        </div>
-                        <div class="blog-details">
-                            <span class="blog-date">June 24, 2016</span>
-                            <span class="blog-author">by Abdeirahman Hani</span>
-                            <span class="blog-comments">
-                                <span class="fa fa-comment-o"></span>29
-                            </span>
-                            <span class="blog-labels">
-                                <span class="label label-rounded label-transparent">Business</span>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="blog-body">
-                        <div class="img-container">
-                            <img src="img/blog1.jpg" alt="">
-                        </div>
-                        <div class="blog-title">
-                            <a href="blog-detail.html">How to Start A Successful Online Business</a>
-                        </div>
-                        <div class="blog-details">
-                            <span class="blog-date">May 5, 2016</span>
-                            <span class="blog-author">by Abdeirahman Hani</span>
-                            <span class="blog-comments">
-                                <span class="fa fa-comment-o"></span>29
-                            </span>
-                            <span class="blog-labels">
-                                <span class="label label-rounded label-transparent">Business</span>
-                            </span>
+                        <div class="blog-content">
+                            <p>V městských bytech v nejlidnatějším ostravském obvodu Jih se do konce měsíce objeví detektory, které budou upozorňovat na případný únik oxidu uhelnatého (CO).</p>
+                            <p>Obvod chce dát hlásiče instalovat do všech 234 obecních bytů, ve kterých jsou plynové kotle nebo plynové ohřívače vody. Za detektory zaplatí bezmála půl milionu korun, řekla mluvčí radnice Martina Gavendová.</p>
+                            <p>„Reagujeme tak na rostoucí počet otrav oxidem uhelnatým s cílem zvýšit bezpečí našich nájemníků. Vybrali jsme detektory, které provádí testování na smrtelné nebezpečí v podobě oxidu uhelnatého každou vteřinu. Navíc jsou odolné proti vlhkosti a jejich životnost garantována na dobu deseti let. Po celou dobu bude každoročně prováděna revize zařízení,“ uvedla radní pro bytovou oblast Markéta Langrová (ANO).</p>
+                            <p>Ze statistik vyplývá, že v České republice je v souvislosti s únikem CO každoročně intoxikováno přes tisíc lidí, asi čtvrtina z nich musí být hospitalizována a na následky otravy umírá ročně v průměru až sto lidí.</p>
+                            <p>Jen moravskoslezští záchranáři každoročně ošetří několik desítek lidí s otravou oxidem uhelnatým. Otravy nejčastěji způsobují domácí topeniště – kamna, krby, kotle nebo ohřívače vody.</p>
+                            <p>K otravám přispívá také zateplení, výměna oken, a tedy větší utěsnění obydlí. To brání přirozenému pohybu vzduchu a větrání.</p>
+                            <p>„V případě, že detektor zaregistruje nahromaděný oxid uhelnatý a spustí alarm, je třeba okamžitě vypojit plynové zařízení, intenzivně větrat a následně kontaktovat bytového technika nebo havarijní službu, která funguje nepřetržitě,“ uvedla Gavendová.</p>
+                            <p>Oxid uhelnatý je bez barvy a zápachu a první příznaky otravy jsou podobné chřipce či jiným onemocněním, například točení či bolesti hlavy, nevolnosti nebo bolesti na hrudníku. Záchranáři i hasiči už v minulosti opakovaně vyzývali obyvatele, aby si doma instalovali detektory úniku plynu.</p>
+                            <p>Hlásiče před časem do obecních bytů dal umístit například i ostravský městský obvod Mariánské Hory a Hulváky, který za to zaplatil zhruba 300.000 korun.</p>
                         </div>
                     </div>
                 </div>
-                <div class="blog-footer">
-                    <button type="button" class="btn btn-pill btn-transparent" data-slide="prev">Previous</button>
-                    <button type="button" class="btn btn-pill btn-transparent" data-slide="next">Next</button>
+                <div class="section-wrapper">
+                    <h2 class="form-title">Comments (2)</h2>
+
+                    <div class="comment">
+                        <div class="comment-avatar">
+                            <img class="rounded" src="img/random-avatar.jpg" alt="">
+                        </div>
+                        <div class="comment-right">
+                            <div class="comment-header">
+                                <ul class="nav"><li class="font-bold">kate@gmail.com</li><li>April 24, 2017</li></ul>
+                            </div>
+                            <p>Tohle je komentář.</p>
+                        </div>
+                    </div>
+
+                    <div class="comment">
+                        <div class="comment-avatar">
+                            <img class="rounded" src="img/random-avatar.jpg" alt="">
+                        </div>
+                        <div class="comment-right">
+                            <div class="comment-header">
+                                <ul class="nav"><li class="font-bold">kate@gmail.com</li><li>April 24, 2017</li></ul>
+                            </div>
+                            <p>Tohle je komentář.</p>
+                        </div>
+                    </div>
+
+                    <form data-input-validation="on" class="form-border">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <span class="counter">0/100</span>
+                                <input type="text" class="form-control underline-input" placeholder="Username" name="username" minlength="2" maxlength="100" required>
+                                <div class="help-block"></div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <span class="counter">0/100</span>
+                                <input type="email" class="form-control underline-input" placeholder="Email" name="email" minlength="5" maxlength="100" required>
+                                <div class="help-block"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control underline-textarea" rows="2" placeholder="Message" name="message" required></textarea>
+                            <div class="help-block"></div>
+                        </div>
+                        <div class="form-footer">
+                            <button type="submit" class="btn btn-underline">Send</button>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="col-sm-3">

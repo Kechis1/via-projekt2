@@ -92,6 +92,20 @@
   }
 }
 
+.blog-content {
+  margin-top: 40px;
+  line-height: 1.65;
+  font-size: 14px;
+}
+
+.blog {
+  margin-bottom: 80px;
+}
+
+h2.form-title {
+  text-align: left;
+}
+
 .blog-body {
   text-align: left;
   padding: 50px 0;
@@ -109,15 +123,16 @@
     }
   }
 
-  .blog-title a {
-    color: @font-color;
-    font-size: @font-size-xxl;
-    font-family: @font-roboto-slab;
-    font-weight: @font-weight-bold;
-    padding: 22px 0 9px 0;
-    display: block;
-
-    &:hover {
+  .blog-title {
+    a, h2 {
+      color: @font-color;
+      font-size: @font-size-xxl;
+      font-family: @font-roboto-slab;
+      font-weight: @font-weight-bold;
+      padding: 22px 0 9px 0;
+      display: block;
+    }
+    a:hover {
       color: @color-blue;
     }
   }
@@ -162,7 +177,7 @@
 }
 
 .blog-footer {
-  padding: 85px 0 40px 0;
+  padding: 5px 0 40px 0;
 
   .btn {
     margin: 6px;

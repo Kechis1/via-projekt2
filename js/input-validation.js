@@ -24,18 +24,22 @@
         messages = json;
     });
 
-    $(document).on('keyup', inputs, function () {
+    $(document).on('keyup change', inputs, function () {
         var $this = $(this);
         var $parent = $this.parent();
         var minlength = $this.attr(ATTR_MIN_LENGTH);
         var maxlength = $this.attr(ATTR_MAX_LENGTH);
         var length = $.trim($this.val()).length;
+        var $counter = $this.prev();
 
+        var n = $counter.text().indexOf('/');
+        var result = $counter.text().substring(n + 1);
+
+        $counter.text(length + "/" + result);
         verifyEmpty(messages, length, $parent);
         verifyMinCharacters(messages, length, minlength, $parent);
         verifyMaxCharacters(messages, length, maxlength, $parent);
         verifyClassHasError($parent);
-        verifySubmitButton();
     });
 
     $(document).on('keyup', inputEmail, function () {
@@ -44,7 +48,6 @@
 
         verifyEmailPattern(messages, $parent, $this);
         verifyClassHasError($parent);
-        verifySubmitButton();
     });
 
     function verifyClassHasError($parent) {
